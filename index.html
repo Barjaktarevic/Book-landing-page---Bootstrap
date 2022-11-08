@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Book Promotion Page</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand"><span class="text-secondary fw-bold"> <i class="bi bi-book"></i> All Quiet on the Western Front</span></a>
+
+            <!-- Toggle button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#topics">About the Book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Get in touch</a>
+                </li>
+                <li class="nav-item d-md-none">
+                    <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item ms-2 d-none d-md-inline">
+                    <a class="btn btn-secondary" href="#pricing">Buy now</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+
+    <!-- First Section -->
+    <section id="intro" class="p-5">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">All Quiet On the Western Front</div>
+                        <div class="display-5 text-muted">World War One Literature</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <a href="#pricing" class="btn btn-secondary btn-large">Buy Now!</a>
+                    <!-- open offcanvas / sidebar -->
+                    <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Explore my other books</a>
+                    <!-- end of open offcanvas / sidebar code -->
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <!-- tooltip -->
+                    <span class="tt" data-bs-placement="bottom" title="All Quiet On the Western Front"><img src="BookCover.jpg" class="img-fluid img-thumbnail"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing plans -->
+    <section id="pricing" class="bg-light mt-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Pricing Plans</h2>
+                <p class="lead text-muted">Choose a pricing plan to suit you.</p>
+            </div>
+        <div class="row my-5 align-items-center justify-content-center g-0">
+            <!-- Card one -->
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Abridged Edition</h4>
+                        <p class="lead card-subtitle">eBook download only</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$3.99</p>
+                        <p class="card-text-mx-5-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, optio.</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card two -->
+            <div class="col-9 col-lg-4">
+                <div class="card border-primary border-2">
+                    <div class="card-header text-center text-primary py-2 display-6">Most popular</div>
+                    <div class="card-body text-center py-5">
+                        <h4 class="card-title">Paperback Edition</h4>
+                        <p class="lead card-subtitle">Free delivery within UK</p>
+                        <p class="display-4 my-4 text-primary fw-bold">$12.99</p>
+                        <p class="card-text-mx-5-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, optio.</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card three -->
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Hardback Edition</h4>
+                        <p class="lead card-subtitle">Free delivery within UK</p>
+                        <p class="display-5 my-4 text-primary fw-bold">$29.99</p>
+                        <p class="card-text-mx-5-muted d-none d-lg-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, optio.</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Topics at a glance -->
+    <section id="topics"> 
+        <div class="container-md">
+            <div class="text-center">
+                <h2>Inside the Book...</h2>
+                <p class="lead text-muted">A quick glance at the topics the book deals with.</p>
+            </div>
+
+            <!-- Grid -->
+            <div class="row my-1 g-5 justify-content-around align-items-center">
+                <div class="col-6 col-lg-6">
+                    <img src="BookCover2.webp" alt="Book cover" class="img-fluid rounded">
+                </div>
+
+               <div class="col& col-lg-6">
+            <!-- Accordion within grid -->
+                <div class="accordion" id="topics">
+
+                     <!-- Accordion item 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#topic-1" aria-expanded="true" aria-controls="topic-1">
+                                The cruelty of war
+                            </button>
+                        </h2>
+
+                        <div id="topic-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#topics">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, incidunt. Harum omnis eveniet quaerat culpa dolore nisi aperiam nesciunt, quis officia obcaecati expedita eaque repellendus?              
+                                </p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis rem quod placeat! Error, quibusdam. Fuga quasi, debitis obcaecati laudantium veniam recusandae magnam voluptatum natus possimus deserunt?             
+                                </p>
+                            </div>
+                        </div>                   
+
+                    </div>
+
+                    <!-- Accordion item 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-2">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#topic-2" aria-expanded="true" aria-controls="topic-2">
+                                The delusions of youth and World War One propaganda
+                            </button>
+                        </h2>
+
+                        <div id="topic-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#topics">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, incidunt. Harum omnis eveniet quaerat culpa dolore nisi aperiam nesciunt, quis officia obcaecati expedita eaque repellendus?              
+                                </p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis rem quod placeat! Error, quibusdam. Fuga quasi, debitis obcaecati laudantium veniam recusandae magnam voluptatum natus possimus deserunt?             
+                                </p>
+                            </div>
+                        </div>                   
+
+                    </div>
+
+                    <!-- Accordion item 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-3">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#topic-3" aria-expanded="true" aria-controls="topic-1">
+                                The reality of trench warfare
+                            </button>
+                        </h2>
+
+                        <div id="topic-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#topics">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, incidunt. Harum omnis eveniet quaerat culpa dolore nisi aperiam nesciunt, quis officia obcaecati expedita eaque repellendus?              
+                                </p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint veritatis rem quod placeat! Error, quibusdam. Fuga quasi, debitis obcaecati laudantium veniam recusandae magnam voluptatum natus possimus deserunt?             
+                                </p>
+                            </div>
+                        </div>                   
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Reviews list -->
+    <section id="reviews" class="bg-light m-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2><i class="bi bi-stars"></i> Book Reviews</h2>
+                <p class="lead">What my students have said about the book...</p>
+            </div>
+
+            <!-- Grid (only to apply different widths at different sizes)-->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3 m-2 shadow-lg">
+                            <div class="pb-2"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i></div>
+                            <h5 class="mb-1">A must buy for anyone even remotely interested in World War Literature</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, sunt repellat. Iusto iure molestias maiores consectetur. Unde dolor molestias, maiores, repellat iure veritatis numquam modi debitis aperiam fugit deserunt veniam.</p>
+                            <small>Review by Drago</small>
+                        </div>
+
+                        <div class="list-group-item py-3 m-2 shadow-lg">
+                            <div class="pb-2"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i></div>
+                            <h5 class="mb-1">One of the most brutal accounts of war in fiction</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error dolore autem. Optio id vero ab cum dolore dolor? Magni at officia reiciendis! At, unde dicta, eveniet, provident et nobis odit aspernatur earum veritatis omnis fugiat!.</p>
+                            <small>Review by Nada</small>
+                        </div>
+
+                        <div class="list-group-item py-3 m-2 shadow-lg">
+                            <div class="pb-2"><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i></div>
+                            <h5 class="mb-1">A macabre depiction of the realities of trench warfare</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veritatis autem illo nemo impedit eligendi.</p>
+                            <small>Review by Tea</small>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact form -->
+    <section id="contact" class="m-5">   
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Get in Touch</h2>
+                <p class="lead">Questions to ask? Fill out the form to contact us directly.</p>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form>
+                        <label for="email" class="form-label">Email address</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                            <input type="email" class="form-control" id="email" placeholder="e.g. johndoe@gmail.com">
+                            <span class="tt" data-bs-placement="bottom"  title="Enter an email address we can reply to."> 
+                            <span class="input-group-text"><i class="bi bi-question"></i></span>
+                            </span>
+                        </div>
+                        
+
+                        <label for="name" class="form-label">Name:</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text"><i class="bi bi-person"></i></span>
+                            <input type="text" class="form-control" id="name" placeholder="e.g. John Doe">
+                            <span class="tt" data-bs-placement="bottom"  title="Enter your real name."> 
+                                <span class="input-group-text"><i class="bi bi-question"></i></span>
+                                </span>
+                        </div>
+                        
+
+                        <label for="subject" class="form-label">What is your question about?</label>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text"><i class="bi bi-chat-left-dots"></i></span>
+                            <select id="subject" class="form-select">
+                                <option value="pricing" selected>Pricing query</option>
+                                <option value="content">Content query</option>
+                                <option value="other">Other query</option>
+                            </select>
+                        </div>
+                        
+
+                       
+                        <div class="form-floating my-4">
+                            <textarea class="form-control" id="query" style="height: 15vh"></textarea>
+                            <label for="query" class="form-label">Your query...</label>
+                        </div>
+
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </div>
+                        
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal button and section -->
+    <section class="bg-light mb-5">
+        <div class="container">
+            <div class="text-center">
+                <h2>Stay in The Loop</h2>
+                <p class="lead">Get the latest updates as they happen...</p>
+                <!-- GRID -->
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <p class="text-muted my-4">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nobis provident suscipit, dolores neque doloremque blanditiis libero expedita a sed necessitatibus earum atque deserunt cupiditate iste cum temporibus, reprehenderit eveniet officia non aspernatur rem eligendi.
+                        </p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register for Updates</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal itself -->
+        <div class="modal fade" id="reg-modal" tab-index="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quia eum itaque molestiae voluptatibus iste veniam officiis quisquam placeat ipsa, ab consequuntur explicabo necessitatibus neque totam corrupti qui! Corrupti quod aliquid natus doloribus esse reiciendis?</p>
+                        <label for="modal-email" class="form-label">Your email address:</label>
+                        <input type="text" class="form-control" id="modal-email" placeholder="e.g. johndoe@gmail.com">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Off-canvas (anchor is in the first section) -->
+    <div class="offcanvas offcanvas-end" tab-index="-1" id="sidebar" aria-labelled-by="sidebar-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, unde odit! Eligendi reiciendis nobis cum quia, totam deleniti saepe modi ut praesentium magni repellendus pariatur earum animi adipisci molestiae quos minus facilis distinctio delectus officiis.</p>
+            <!-- dropdown -->
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  Choose a book title
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                  <li><a class="dropdown-item text-center" href="#">The Guns of August <small class="ms-3">by Barbara W. Tuchman</small></a></li>
+                  <li><a class="dropdown-item text-center" href="#">Death of a Hero <small class="ms-3">by Richard Adlington</small></a></li>
+                  <li><a class="dropdown-item text-center" href="#">Generals Die in Bed <small class="ms-3">by Charles Y. Harrison</small></a></li>
+                </ul>
+              </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+</html>
